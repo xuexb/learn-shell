@@ -130,3 +130,13 @@ grep -i 'A' file
 grep -sq 'a' file
 echo $?
 ```
+
+### 配合其他命令操作
+
+```shell
+# 递归查找当前目录下的所有 `*.conf` 文件, 并匹配出指定端口内容
+find . -name '*.conf' -type f | xargs grep --color -E 'listen\s+(80|8085)\b'
+
+# 列出当前 `npm root` 下的子目录以 fis3 开头的文件夹
+ls `npm root` | grep '^fis3'
+```

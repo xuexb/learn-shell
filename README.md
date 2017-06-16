@@ -4,7 +4,7 @@
 
 ## 命令
 
-- [grep](docs/grep.md)
+- [grep - 文本搜索工具](docs/grep.md)
 - seq
 - sed
 - sort
