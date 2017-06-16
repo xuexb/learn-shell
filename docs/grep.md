@@ -14,6 +14,7 @@ grep [参数] <匹配符> <文件路径 文件路径>
 -E | extended-regexp | 开启扩展的正则查找
 -h | no-filename | 抑制文件名的输出
 -i | ignore case | 忽略大小写
+-r | - | 递归查找
 -L | file-without-match | 输出不匹配的文件名
 -l | file-with-match | 输出匹配的文件名
 -n | number | 输出匹配行的同时在前面加上文件名及在文件名中的行数
@@ -121,6 +122,9 @@ grep -l 'a' *
 
 # 忽略大写小查找
 grep -i 'A' file
+
+# 递归查找某个目录
+grep -r 'xxoo' /path/
 ```
 
 ### 不输出任何内容, 用来测试是否通过
